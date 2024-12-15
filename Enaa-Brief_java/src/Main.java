@@ -9,6 +9,10 @@ public class Main {
     static double subtractionn(double x, double y) {
        return x - y;
    }
+     static double multiplicationn(double x, double y) {
+       return x * y;
+   }
+
 
 	static void menu(){
        System.out.println("\n \t Welcome to the Calculator Program !!");
@@ -57,6 +61,14 @@ public class Main {
         rs = subtractionn(x,y);
         System.out.println("la subtractionn est : "+rs);
         break;
+	   case 3:
+            System.out.println("Enter la valeur de x: ");
+            x = scanner.nextDouble();
+            System.out.println("Enter la valeur de y: ");
+            y = scanner.nextDouble();
+            rs = multiplicationn(x,y);
+            System.out.println("la multiplicationn est : "+rs);
+            break;
  default:
                    System.out.println("invalid operation");
 
@@ -68,7 +80,7 @@ public class Main {
        }
 
 
-       }while (choix!=2);
+       }while (choix!=3);
 
 
 
