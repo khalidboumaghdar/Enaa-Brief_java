@@ -134,6 +134,9 @@ public class Main {
                rs = Factorielle(x);
                System.out.println("la Factorielle est : "+rs);
                break;
+		case 8:
+               System.out.println("***AU REVOIR ***");
+               break;
 
 
 
@@ -149,7 +152,7 @@ public class Main {
        }
 
 
-       }while (choix!=7);
+       }while (choix!=8);
 
 
 
