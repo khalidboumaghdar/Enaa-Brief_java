@@ -20,6 +20,10 @@ public class Main {
      static double Puissance(double x, double y) {
        return Math.pow(x, y);
    }
+     static double Racine_carree(double x) {
+       return Math.sqrt(x);
+   }
+
 
 
 
@@ -99,6 +103,15 @@ public class Main {
                     rs = Puissance(x,y);
                     System.out.println("la Puissance est : "+rs);
                     break;
+		      case 6:
+                    System.out.println("Enter la valeur de x: ");
+                    x = scanner.nextDouble();
+
+
+                    rs = Racine_carree(x);
+                    System.out.println("la Racine carree est : "+rs);
+                    break;
+
 
 
  default:
@@ -112,7 +125,7 @@ public class Main {
        }
 
 
-       }while (choix!=4);
+       }while (choix!=6);
 
 
 
