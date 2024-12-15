@@ -3,6 +3,9 @@ import java.lang.Math;
 //TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
 // click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
 public class Main {
+	   static double additionn(double x, double y) {
+       return x + y;
+   }
 	static void menu(){
        System.out.println("\n \t Welcome to the Calculator Program !!");
        System.out.println("1:Addition  ");
@@ -25,7 +28,36 @@ public class Main {
         double x;
         double y;
         int choix;
-        menu();
+        do{
+
+
+           double rs;
+
+
+       menu();
+        choix = scanner.nextInt();
+       switch (choix){
+           case 1:
+               System.out.println("Enter la valeur de x: ");
+               x = scanner.nextDouble();
+               System.out.println("Enter la valeur de y: ");
+               y = scanner.nextDouble();
+                rs = additionn(x,y);
+    System.out.println("la somme est : "+rs);
+    break;
+ default:
+                   System.out.println("invalid operation");
+
+
+
+
+
+
+       }
+
+
+       }while (choix!=1);
+
 
 
     }
