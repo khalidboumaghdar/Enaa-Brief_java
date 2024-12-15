@@ -17,6 +17,10 @@ public class Main {
 
        return x / y;
    }
+     static double Puissance(double x, double y) {
+       return Math.pow(x, y);
+   }
+
 
 
 
@@ -86,6 +90,16 @@ public class Main {
                     rs = divisionn(x,y);
                     System.out.println("la divisionn est : "+rs);
                 }
+		break;
+		 case 5:
+                    System.out.println("Enter la valeur de x: ");
+                    x = scanner.nextDouble();
+                    System.out.println("Enter la valeur de y: ");
+                    y = scanner.nextDouble();
+                    rs = Puissance(x,y);
+                    System.out.println("la Puissance est : "+rs);
+                    break;
+
 
  default:
                    System.out.println("invalid operation");
