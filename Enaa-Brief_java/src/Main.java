@@ -12,6 +12,12 @@ public class Main {
      static double multiplicationn(double x, double y) {
        return x * y;
    }
+     static double divisionn(double x, double y) {
+
+
+       return x / y;
+   }
+
 
 
 	static void menu(){
@@ -69,6 +75,18 @@ public class Main {
             rs = multiplicationn(x,y);
             System.out.println("la multiplicationn est : "+rs);
             break;
+	     case 4:
+                System.out.println("Enter la valeur de x: ");
+                x = scanner.nextDouble();
+                System.out.println("Enter la valeur de y: ");
+                y = scanner.nextDouble();
+                if (y == 0){
+                    System.out.println("division impossible de zéro");
+                }else{
+                    rs = divisionn(x,y);
+                    System.out.println("la divisionn est : "+rs);
+                }
+
  default:
                    System.out.println("invalid operation");
 
@@ -80,7 +98,7 @@ public class Main {
        }
 
 
-       }while (choix!=3);
+       }while (choix!=4);
 
 
 
