@@ -23,6 +23,21 @@ public class Main {
      static double Racine_carree(double x) {
        return Math.sqrt(x);
    }
+     static double Factorielle(double x) {
+       int rs;
+       rs=1;
+       for (int i=1;i<=x;i++){
+           rs=rs*i;
+
+
+       }
+       return rs;
+
+
+
+
+   }
+
 
 
 
@@ -111,6 +126,15 @@ public class Main {
                     rs = Racine_carree(x);
                     System.out.println("la Racine carree est : "+rs);
                     break;
+		    case 7:
+               System.out.println("Enter la valeur de x: ");
+               x = scanner.nextDouble();
+
+
+               rs = Factorielle(x);
+               System.out.println("la Factorielle est : "+rs);
+               break;
+
 
 
 
@@ -125,7 +149,7 @@ public class Main {
        }
 
 
-       }while (choix!=6);
+       }while (choix!=7);
 
 
 
