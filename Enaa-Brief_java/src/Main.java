@@ -6,6 +6,10 @@ public class Main {
 	   static double additionn(double x, double y) {
        return x + y;
    }
+    static double subtractionn(double x, double y) {
+       return x - y;
+   }
+
 	static void menu(){
        System.out.println("\n \t Welcome to the Calculator Program !!");
        System.out.println("1:Addition  ");
@@ -45,6 +49,14 @@ public class Main {
                 rs = additionn(x,y);
     System.out.println("la somme est : "+rs);
     break;
+     case 2:
+        System.out.println("Enter la valeur de x: ");
+        x = scanner.nextDouble();
+        System.out.println("Enter la valeur de y: ");
+        y = scanner.nextDouble();
+        rs = subtractionn(x,y);
+        System.out.println("la subtractionn est : "+rs);
+        break;
  default:
                    System.out.println("invalid operation");
 
@@ -56,7 +68,7 @@ public class Main {
        }
 
 
-       }while (choix!=1);
+       }while (choix!=2);
 
 
 
